@@ -1,0 +1,334 @@
+
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+img{vertical-align:top;}
+/*--------------------*/
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    max-width: 500;
+    margin: 0px auto;
+    padding: 0px 25px ;
+}
+
+.content {
+    flex: 1 1 auto;
+    
+}
+
+.valerik {
+    background-color: lightgreen;
+    padding: 50px 0;
+}
+
+.valerik__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.valerik__body {
+    color:black;
+    
+}
+.valerik__title {
+    text-shadow: 1px 1px 0;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 100;
+}
+.valerik__list {
+
+     width: 230px; 
+     line-height: 14px; 
+     list-style: square;
+     
+     
+}
+.valerik__list li {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.valerik__list li::before {
+    content: "";
+    display: block;
+    width: 20px;
+    background: url(dota.png);
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 8px ;
+    
+}
+
+.valerik__image {
+
+}
+.valerik__image img {
+    width:200px;
+    display: block;
+    border-radius: 20px;
+    margin-left: 50px;
+    
+}
+
+.title {
+    color: blue;
+    font-size: 30px;
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.title-icons::before, .title-icons::after {
+    content: "";
+    display: block;
+    width: 20px;
+    background: url(dota.png);
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 8px ;
+} 
+        
+    
+
+
+
+
+.title-icons::after {
+    margin-left: 8px;
+}
+
+
+.what {
+    background: lightsteelblue;
+    padding: 15px;
+}
+.what__row {
+    display: flex;
+    align-items: center;
+}
+.what__image {
+    flex: 0 0 230px;
+    padding: 40px;
+}
+.what__image img {
+    width: 230px;
+    padding: 30px 0px 0px 0px;
+
+}
+.what__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 30px;
+}
+.what__title {
+    margin: 0px 0px 25px 0px ;
+    justify-content: flex-start;
+}
+.what__text {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.what__text p {
+    line-height: 21px;
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+}
+.columns {
+    background: grey;
+    padding: 10px;
+}
+.columns__title {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+.columns__row {
+    display: flex;
+    min-height: 400px;
+    flex-wrap: wrap;
+
+}
+.columns__column {
+    flex: 0 1 50%;
+    padding: 20px;
+    
+}
+.columns__item {}
+.item {
+    
+}
+.item__row {
+    display: flex;
+    align-items: center;
+    
+
+}
+.item__image {
+    flex: 0 0 200px;
+    
+    
+    
+}
+.item__image img {
+    
+    padding: 2px 20px 0px 0px;
+    height: 300px;
+}
+.item__body {
+    flex: 1 1 auto;
+}
+.item__title {
+    color: orange;
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0px 0px 15px 0px;
+    text-align: center;
+}
+.item__text {
+    font-size: 12px;
+    color: white;
+    line-height: 14px;
+    font-family: cursive;
+    text-align: center;
+    
+}
+
+
+
+.cards {
+    background: pink;
+    color: aliceblue;
+    padding: 30px 0;
+}
+.cards__title {
+    text-align: center;
+    margin-bottom: 28px;
+    
+
+}
+.cards__row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cards__item {
+
+    
+}
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 28.333%;
+    padding: 20px;
+    background-color: purple;
+    border-radius: 20px;
+    
+}
+.cards-item__text {
+    text-align: center;
+    line-height: 1.2;
+    
+    
+}
+.cards-item__image {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    
+} 
+.cards-item__image img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.cards-item__title {
+    padding: 20px 0px;
+    font-size: 18px;
+    color: orange;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background: black
+}
+.footer__row {
+    display: flex;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+.footer__text {
+    color: red;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.columns__column.juggernaut {
+    align-self: flex-end;
+
+}
+.item__image.juggernaut img{
+    height: 300px;
+}
+.item__image.ember img {
+    height: 300px;
+}
+
+.columns__column.ember {
+    align-self: flex-end;
+}
+
+
+
+
